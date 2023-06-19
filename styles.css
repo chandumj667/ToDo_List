@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    /* max-width: 500px; */
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    /* text-shadow: 3px 3px 10px rgb(94, 222, 236), -3px -3px 10px rgb(94, 222, 236); */
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #66df82;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-shadow: 2px 2px 15px black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #faf9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
+    .container {
+        max-width: 50%;
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+        order: 1;
+    }
+
+    button {
+        margin: 10px auto;
+        padding: 8px 16px;
+        font-size: 14px;
+        order: 2;
+        width: 100%;
+        /* align-self: center; */
+    }
+
+    li {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 750px;
+    }
+
+}
+
+/* Desktop and Laptop devices */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .container {
+        max-width: 960px;
+    }
+    
+}
+
+/* TV screens */
+@media only screen and (min-width: 1440px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+}
